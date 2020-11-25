@@ -2,10 +2,11 @@ import React from 'react'
 import SmallBtn from '../components/SmallBtn'
 
 const First = () => {
+    const bgImageWidth = 8000;
+    const bgImageHeight = 4501;
     return (
         <>
-            <style jsx
-            >{`
+            <style jsx>{`
               div {
                 display:flex;
                 flex-direction:column;
@@ -13,13 +14,14 @@ const First = () => {
               .container {
                   width:auto;
                   flex-direction:column;
-                  width:100%;
-                  height:80em;
+                  width: 100%;
+                  height: calc(${bgImageHeight} / ${bgImageWidth} * 99vw) ; /* bgImageWidth : bgImageHeight = 100vw : x */
               }
               .background{
-                background:url('/images/rending_page_mockup1.png') no-repeat;
-                background-size:contain;
+                background:no-repeat;
+                background-size:100%;
                 height:100%;
+                background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/images/rending_page_mockup1.png')
               }
               .main {
                 flex-grow:1;
@@ -28,15 +30,14 @@ const First = () => {
                   flex-direction:row;
                   justify-content: center;
               }
-            `}
-            </style>
+            `}</style>
             <div className="container">
                 <div className="background">
                     <div className="main">
                         Main
                     </div>
                     <div className="bottom">
-                        <SmallBtn/>
+                        <SmallBtn active/>
                         <SmallBtn/>
                     </div>
                 </div>

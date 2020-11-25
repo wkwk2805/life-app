@@ -1,17 +1,23 @@
 import React from 'react';
 
-const SmallBtn = () => {
+const SmallBtn = ({active}) => {
+    const bgImageWidth = 8000;
+    const bgImageHeight = 4501;
     return <>
         <style jsx>{`
             .small-btn {
-                margin:0.3em;
-                width:2em;
-                height:0.3em;
+                margin:calc(${bgImageHeight} / ${bgImageWidth} * 2vw);
+                margin-bottom: calc(${bgImageHeight} / ${bgImageWidth} * 2vw);
+                width:10vw;
+                height:calc(${bgImageHeight} / ${bgImageWidth} * 0.8vw);
                 background-color:white;
                 border-radius:1em;
             }
+            .small-btn.active {
+                background-color:#474747;
+            }
         `}</style>
-        <div className="small-btn"></div>
+        <div className={`small-btn ${active && 'active'}`}></div>
     </>
 }
 
