@@ -1,57 +1,47 @@
 import React from 'react'
+import SmallBtn from '../components/SmallBtn'
 
 const First = () => {
     return (
-        <div className="first-background">
-            <div className="head">
-                <div>
-                    LIFE&
-                </div>
-                <div>
-                    <div>insta</div>
-                    <div>facebook</div>
-                    <div>kakao</div>
-                </div>
-            </div>
-            <div className="middle">
-                <div>left</div>
-                <div>right</div>
-            </div>
-            <div className="bottom">bottom</div>
-            <div className="title-font-container">
-                <div className="title-font title">
-                    라이프앤
-                </div>
-                <div className="title-font subtitle">
-                    보험부터 건강까지
-                </div>
-            </div>
+        <>
             <style jsx
             >{`
-                .first-background {
-                    background-color:grey;
-                    display:flex;
-                    flex-direction:column;
-                }
-                .title-font-container{
-                    display:flex;
-                    flex-direction:column;
-                }
-                .title-font {
-                    font-family: AppleSDGothicNeo;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: normal;
-                    letter-spacing: normal;
-                    color: #ffffff;
-                }
-                .title {
-                    font-size: 3em;
-                    font-weight: bold;
-                }
+              div {
+                display:flex;
+                flex-direction:column;
+              }
+              .container {
+                  width:auto;
+                  flex-direction:column;
+                  width:100%;
+                  height:80em;
+              }
+              .background{
+                background:url('/images/rending_page_mockup1.png') no-repeat;
+                background-size:contain;
+                height:100%;
+              }
+              .main {
+                flex-grow:1;
+              }
+              .bottom {
+                  flex-direction:row;
+                  justify-content: center;
+              }
             `}
             </style>
-        </div>
+            <div className="container">
+                <div className="background">
+                    <div className="main">
+                        Main
+                    </div>
+                    <div className="bottom">
+                        <SmallBtn/>
+                        <SmallBtn/>
+                    </div>
+                </div>
+            </div>
+        </>
     )
 }
 
