@@ -21,7 +21,7 @@ const First = () => {
                 background:no-repeat;
                 background-size:100%;
                 height:100%;
-                background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/images/rending_page_mockup1.png')
+                background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/images/background_image.png')
               }
               .main {
                 flex-grow:1;

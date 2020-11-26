@@ -6,7 +6,7 @@ const SmallBtn = ({active}) => {
     return <>
         <style jsx>{`
             .small-btn {
-                margin:calc(${bgImageHeight} / ${bgImageWidth} * 2vw);
+                margin:calc(${bgImageHeight} / ${bgImageWidth} * 1.6vw);
                 margin-bottom: calc(${bgImageHeight} / ${bgImageWidth} * 2vw);
                 width:10vw;
                 height:calc(${bgImageHeight} / ${bgImageWidth} * 0.8vw);
