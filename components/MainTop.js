@@ -30,12 +30,13 @@ const MainTop = () => {
                     .btns {margin-top:0vh;}
                     .title {font-size:2em;}
                     .subtitle {font-size:1em;}
-                    .logo {margin:1vw;}
+                    .logo {margin:0.3em;}
                     .logo img {width:20%;height:20%;}
                     .subtitle {font-size:0.3em;}
                     .google-btn {width:25%;height:25%;margin-right:2vw;}
                     .apple-btn {width:25%;height:25%;}
                     .right img {width:9%;height:9%;margin:0.3em;}
+                    .right img:last-child {margin-right:0.6em;}
                 }
             `}</style>
             <div className="left">
