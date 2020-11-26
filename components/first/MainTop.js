@@ -11,19 +11,20 @@ const MainTop = () => {
                 .logo img {width:30%;height:4vw}
                 
                 .title-container {flex-direction:column;margin-bottom:3vw;justify-content:center;}
-                .rest {justify-content:center;margin:5vw 0 2vw 0;}
+                .rest {justify-content:center;margin:5vw 0 1vw 0;}
+                .rest img {height:4vw}
                 .title {font-size:6vw;font-weight:bold;color:white;justify-content:center;}
                 .subtitle {font-size:2vw;color:white;justify-content:center;font-weight:100}
                 
                 .right {flex:1;flex-grow:1;}
                 .store-btns {justify-content:center;margin-top:5vw;}
-                .store-btns img {width:30%;height:6vw}
+                .store-btns img {width:40%;height:6vw}
                 .store-btns img:first-child {margin-right:2vw}
 
                 .right {justify-content:flex-end;}
                 .right img {width:10%;height:10%;margin:1.5vw;}
 
-                /*********** media query ***********/
+                /*********** mobile ***********/
                 @media screen and (max-width:768px) {
                     .rest {justify-content:center;margin:7vw 0 1.5vw 0;}
                     .rest img {width:5%;height:4vw;}
