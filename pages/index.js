@@ -5,6 +5,8 @@ import Fourth from '../templates/Fourth'
 import Second from '../templates/Second'
 import Sixth from '../templates/Sixth'
 import Third from '../templates/Third'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const index = () => {
     return (

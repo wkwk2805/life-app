@@ -1,7 +1,5 @@
 import React from 'react';
 import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Background1 from '../components/first/Background1';
 import Background2 from '../components/first/Background2';
 import CustomNextArrow from '../components/first/CustomNextArrow';
