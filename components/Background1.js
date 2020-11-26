@@ -9,28 +9,11 @@ const Background1 = () => {
     return (
         <>
             <style jsx>{`
-              div {
-                display:flex;
-                flex-direction:column;
-              }
-              .container {
-                  flex-direction:column;
-                  width: 100%;
-                  height: calc(${bgImageHeight} / ${bgImageWidth} * 100vw) ; /* bgImageWidth : bgImageHeight = 100vw : x */
-              }
-              .background1 {
-                background: url('${bgImageUrl}') no-repeat;
-                background-size:100%;
-                height:100%;
-              }
-              .main {
-                flex-grow:1;
-                flex-direction:row;
-              }
-              .bottom {
-                flex-direction:row;
-                justify-content: center;
-              }
+              div {display:flex;flex-direction:column;}
+              .container {flex-direction:column;width: 100%;height: calc(${bgImageHeight} / ${bgImageWidth} * 100vw);}
+              .background1 {background: url('${bgImageUrl}') no-repeat;background-size:100%;height:100%;}
+              .main {flex-grow:1;flex-direction:row;}
+              .bottom {flex-direction:row;justify-content: center;}
             `}</style>
             <div className="container">
                 <div className="background1">
