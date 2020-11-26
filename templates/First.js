@@ -1,49 +1,35 @@
-import React from 'react'
-import SmallBtn from '../components/SmallBtn'
+import React from 'react';
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Background1 from '../components/Background1';
+import Background2 from '../components/Background2';
+import CustomNextArrow from '../components/CustomNextArrow';
 
 const First = () => {
-    const bgImageWidth = 8000;
-    const bgImageHeight = 4501;
+    const settings = {
+        speed: 500,
+        fade: true,
+        autoplaySpeed: 3000,
+        infinite:true,
+        pauseOnHover: true,
+        autoplay: true,
+        nextArrow: <CustomNextArrow />
+    }
     return (
         <>
-            <style jsx>{`
-              div {
-                display:flex;
-                flex-direction:column;
-              }
-              .container {
-                  width:auto;
-                  flex-direction:column;
-                  width: 100%;
-                  height: calc(${bgImageHeight} / ${bgImageWidth} * 99vw) ; /* bgImageWidth : bgImageHeight = 100vw : x */
-              }
-              .background{
-                background:no-repeat;
-                background-size:100%;
-                height:100%;
-                background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/images/background_image.png')
-              }
-              .main {
-                flex-grow:1;
-              }
-              .bottom {
-                  flex-direction:row;
-                  justify-content: center;
-              }
-            `}</style>
-            <div className="container">
-                <div className="background">
-                    <div className="main">
-                        Main
-                    </div>
-                    <div className="bottom">
-                        <SmallBtn active/>
-                        <SmallBtn/>
-                    </div>
+            <Slider {...settings}>
+                <div>
+                    <Background1/>
                 </div>
-            </div>
+                <div>
+                    <Background2/>
+                </div>
+            </Slider>
         </>
     )
 }
+
+
 
 export default First

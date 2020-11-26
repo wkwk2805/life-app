@@ -6,7 +6,13 @@
   "dependencies": {
     "next": "^10.0.3",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-slick": "^0.27.13",
+    "slick-carousel": "^1.8.1"
   },
-  "scripts": {"dev":"next", "start": "next start","build":"next build"}
+  "scripts": {
+    "dev": "next",
+    "start": "next start",
+    "build": "next build"
+  }
 }
