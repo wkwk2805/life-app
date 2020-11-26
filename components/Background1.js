@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import SmallBtn from '../components/SmallBtn'
+import MainTop from './MainTop';
 
 const Background1 = () => {
     const bgImageWidth = 1922;
@@ -24,15 +25,18 @@ const Background1 = () => {
               }
               .main {
                 flex-grow:1;
+                flex-direction:row;
               }
               .bottom {
-                  flex-direction:row;
-                  justify-content: center;
+                flex-direction:row;
+                justify-content: center;
               }
             `}</style>
             <div className="container">
                 <div className="background1">
-                    <div className="main"></div>
+                    <div className="main">
+                        <MainTop />
+                    </div>
                     <div className="bottom">
                         <SmallBtn active/>
                         <SmallBtn />
