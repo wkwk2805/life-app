@@ -7,6 +7,7 @@ import Sixth from '../templates/Sixth'
 import Third from '../templates/Third'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Seventh from '../templates/Seventh'
 
 const index = () => {
     return (
@@ -17,6 +18,7 @@ const index = () => {
             <Fourth/>
             <Fiveth/>
             <Sixth/>
+            <Seventh/>
             <style global jsx>{`
                 body{
                     margin:0;
