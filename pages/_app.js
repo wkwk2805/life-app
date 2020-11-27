@@ -1,5 +1,5 @@
 import React from 'react'
-import '../public/css/seventh.css';
+import '../css/seventh.css';
 
 const MyApp = ({ Component, pageProps }) => <Component {...pageProps} />;
 
