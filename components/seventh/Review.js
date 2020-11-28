@@ -29,7 +29,7 @@ const Review = ({userInfo={}, text=''}) => {
                 }
                 .user {margin:1.5vw;font-size:2vw}
                 .division {height:0.5vw;width:90%;background:#d8d8d8;margin:auto}
-                .text {font-size:2vw;width:85%;margin:auto;margin-top:1vw;height:13.5vw;}
+                .text {font-size:2vw;width:85%;margin:auto;margin-top:2vw;height:13.5vw;}
                 .multi-line-ellipsis {
                     overflow: hidden; 
                     text-overflow: ellipsis; 

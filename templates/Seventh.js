@@ -1,6 +1,6 @@
 import React from 'react'
 import Slider from 'react-slick';
-import CustomNextArrow from '../components/first/CustomNextArrow'
+import CustomNextArrow from '../components/header/CustomNextArrow'
 import Review from '../components/seventh/Review'
 
 const Seventh = () => {
