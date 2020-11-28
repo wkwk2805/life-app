@@ -7,13 +7,9 @@ const Sixth = () => {
             <style jsx>{`
                 .division {height:0.1vw;background:#c1c1c1;width:80%;margin:auto;}
                 .container {height:40vw;width:80%;margin:auto;margin-top:5vw;}
-                .sub-text {font-size:2vw;}
-                .green {color:#37ae40;}
-                .text {font-size:4vw;}
-                .text span {font-weight:bold}
+                .sub-text {font-size:2.4vw;}
                 .bottom-text {text-align:center;margin-left:20vw;margin-top:-1.5vw}
                 .bottom-text div {font-size:1vw;border:0.1vw solid grey;padding:0.1vw 1vw; border-radius:0.2vw;display:inline-block}
-                .sub-text ol {padding-left:3vw !important;}
                 .bgImage img{position:absolute;right:0;width:70vw;height:45vw;opacity:0.2;margin-top: -5vw;}
             `}</style>
             <div>
@@ -22,10 +18,10 @@ const Sixth = () => {
                     <div className="bgImage">
                         <img src={bgImageUrl} />
                     </div>
-                    <div className="text">
-                        <span className="green">개인정보</span>가{' '}<span>유출 될까 걱정</span>이신가요?
+                    <div className="section-header-text">
+                        <span className="green bold">개인정보</span>가{' '}<span className="bold">유출 될까 걱정</span>이신가요?
                     </div>
-                    <div className="sub-text">
+                    <div className="section3-sub-text">
                         <ol>
                             <li>가입시 입력하는 <strong>개인정보</strong>는 <strong>정보통신망법</strong> 및 <strong>개인정보보호법</strong>에 <strong>근거</strong>하여<br/><strong>안전</strong>하고 <strong>강력한 암호 알고리즘</strong>에 의하여 <strong>암호화되어</strong> 있습니다.</li>
                             <br/>

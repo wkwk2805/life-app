@@ -4,6 +4,8 @@ div {font-family : AppleSDGothicNeoM;}
 .phone-mockup img {width:100%;margin:auto;}
 .green {color:#37ae40;}
 .bold {font-weight:bold;}
+.ml10 {margin-left: 10vw;}
+.mr10 {margin-right: 10vw;}
 
 @media screen and (min-width:768px) {
     .pd25 {padding:2.5vw}

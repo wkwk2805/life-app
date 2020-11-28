@@ -8,7 +8,7 @@ const Section2 = () => {
                     <div className="phone-mockup">
                         <img src="/images/contents2-1.png"/>
                     </div>
-                    <div className="section-header-text">
+                    <div className="section-header-text mr10">
                         <div><span className="green">보험금</span>을{' '}<span className="bold">놓치지 않도록</span></div>
                         <div><span className="bold">방지</span>해드립니다</div>
                         <div>병원 가기 전<span className="bold"> 습관!</span></div>

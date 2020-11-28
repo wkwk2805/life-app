@@ -5,7 +5,7 @@ const Third = () => {
         <>
             <div>
                 <div className="section1-container">
-                    <div className="section-header-text">
+                    <div className="section-header-text ml10">
                         <div><span className="bold">받을 수</span>{' '}있는</div>
                         <div><span className="bold green">보험금</span>이{' '}<span className="bold">이렇게나</span></div>
                         <div><span className="bold">많이</span>{' '}있다고?</div>
