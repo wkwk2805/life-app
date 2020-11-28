@@ -35,11 +35,10 @@ const First = () => {
     }
     return (
         <> 
-        <MainTop isBg1={true} windowHeight={windowHeight} windowWidth={windowWidth}/>
-        {/* <Slider {...settings}>
+        <Slider {...settings}>
             <MainTop isBg1={true} windowHeight={windowHeight} windowWidth={windowWidth}/>
             <MainTop isBg1={false} windowHeight={windowHeight} windowWidth={windowWidth}/>
-        </Slider> */}
+        </Slider>
         </>
     )
 }

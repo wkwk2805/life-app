@@ -6,59 +6,46 @@ const MainTop = ({isBg1 = false, windowWidth, windowHeight}) => {
     return (
         <div>
             <style jsx>{`
-                @media screen and (min-width:768px) {
-                    .header-container {width:${windowWidth}px;position:relative;z-index:2;top:-${windowHeight}px;margin:auto;height:0;}
-                    .arrow {position:absolute;right:0;top: ${windowHeight * 260 / 410}px;}
-                    .arrow img {width:7vw;height:14vw;}
-                }
-                
-                @media screen and (max-width:768px) {
-                    .header-container {width:${windowWidth}px;position:relative;z-index:2;top:-${windowHeight}px;margin:auto;height:0;}
-                    .arrow {position:absolute;right:0;top: ${windowHeight * 280 / 410}px;}
-                    .arrow img {width:8vw;height:16vw;margin: 1vw 2.5vw 0 0}
-                }
+                .background {background:url('${bgUrl}') no-repeat;background-size:${windowWidth}px ${windowHeight}px;}
+                .header-container {width:${windowWidth}px;height:${windowHeight}px;margin:auto;}
             `}</style>
-            <img className="background-image" src={bgUrl} width={windowWidth} height={windowHeight} />
-            <div className="header-container">
-                <div className="flex-column">
-                    <div className="flex-grow1">
-                        <div className="flex-row pd25 between">
-                            <div className="logo">
-                                <img src="/images/life_and_logo.png" width/>
-                            </div>
-                            <div className="icon flex-row">
-                                <img src="/images/instagram.png"/>
-                                <img src="/images/facebook.png"/>
-                                <img src="/images/kakao.png"/>
-                            </div>
-                        </div>
-                        <div className="flex-row">
-                            <div className="title flex-column align-center">
-                                <img src="/images/rest.png" />
-                                <div className="header-font white">라이프앤</div>
-                                <div className="sub-font white">보험부터 건강까지</div>
-                            </div>
-                        </div>
-                        <div className="flex-row">
-                            <div className="store-btns flex-row flex-center justify-center">
-                                <img src="/images/GooglePlay.png"/>
-                                <img src="/images/Appstore_logo.png"/>
-                            </div>
-                        </div>
+            <div className="header-container background flex-column">
+                <div className="flex-row pd25 justify-between">
+                    <div className="logo">
+                        <img src="/images/life_and_logo.png"/>
                     </div>
-                    <div className="small-btns flex-row">
-                        {isBg1? 
-                        <>
-                            <SmallBtn active/>
-                            <SmallBtn/>
-                        </>:
-                        <>
-                            <SmallBtn />
-                            <SmallBtn active/>
-                        </>}
+                    <div className="icon flex-row">
+                        <img src="/images/instagram.png"/>
+                        <img src="/images/facebook.png"/>
+                        <img src="/images/kakao.png"/>
                     </div>
                 </div>
-                
+                <div className="flex-row grow1">
+                    <div className="title grow1 flex-column align-center align-between">
+                        <img src="/images/rest.png" />
+                        <div className="header-font white">라이프앤</div>
+                        <div className="sub-font white">보험부터 건강까지</div>
+                        <div className="store-btns flex-row">
+                            <img src="/images/GooglePlay.png"/>
+                            <img src="/images/Appstore_logo.png"/>
+                        </div>
+                        <div className="flex-row align-end grow1 align-self-flex-end">
+                            <div className="flex-column justify-end grow1">
+                                <SmallBtn active/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="grow1 flex-row">
+                        <div className="grow1 align-self-flex-end">
+                            <SmallBtn/>
+                        </div>
+                        <div className="flex-row">
+                            <div className="grow1 flex-column align-self-flex-end">
+                                <img src="/images/down-arrow.png" className="arrow"/>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )
