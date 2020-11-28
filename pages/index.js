@@ -27,7 +27,7 @@ const index = () => {
                     padding:0;
                 }
                 div {
-                    font-family : AppleSDGothicNeo;
+                    font-family : AppleSDGothicNeoM;
                 }
             `}</style>
         </div>

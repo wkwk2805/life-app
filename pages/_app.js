@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/seventh.css';
+import '../public/css/font.css';
 
 const MyApp = ({ Component, pageProps }) => <Component {...pageProps} />;
 

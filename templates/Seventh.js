@@ -8,13 +8,12 @@ const Seventh = () => {
         speed: 500,
         autoplaySpeed: 3000,
         infinite: false,
-        pauseOnHover: true,
-        autoplay: true,
         nextArrow: <CustomNextArrow />,
         prevArrow: <CustomNextArrow />,
         slidesToScroll: 1,
         variableWidth:true,
         centerMode: true,
+        initialSlide : 1
     }
     const text = `바빠서 보험금 신청을 바로
     못하였는데 저렴한 수수료에

@@ -16,14 +16,15 @@ const First = () => {
     }
     return (
         <>
-            <Slider {...settings}>
+        <Background1/>
+            {/* <Slider {...settings}>
                 <div>
-                    <Background1/>
+                    
                 </div>
                 <div>
                     <Background2/>
                 </div>
-            </Slider>
+            </Slider> */}
         </>
     )
 }
