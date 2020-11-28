@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import CustomNextArrow from '../components/header/CustomNextArrow';
-import MainTop from '../components/header/MainTop'
+import HeaderMain from '../components/header/HeaderMain'
 
 const First = () => {
     const [windowWidth, setWindowWidth] = useState(0);
@@ -36,8 +36,8 @@ const First = () => {
     return (
         <> 
         <Slider {...settings}>
-            <MainTop isBg1={true} windowHeight={windowHeight} windowWidth={windowWidth}/>
-            <MainTop isBg1={false} windowHeight={windowHeight} windowWidth={windowWidth}/>
+            <HeaderMain isBg1={true} windowHeight={windowHeight} windowWidth={windowWidth}/>
+            <HeaderMain isBg1={false} windowHeight={windowHeight} windowWidth={windowWidth}/>
         </Slider>
         </>
     )

@@ -1,8 +1,12 @@
-import React, { useEffect } from 'react'
-import SmallBtn from './SmallBtn'
+import React from 'react'
 
-const MainTop = ({isBg1 = false, windowWidth, windowHeight}) => {
+const HeaderMain = ({isBg1 = false, windowWidth, windowHeight}) => {
     const bgUrl = isBg1 ? "/images/background_image1.png" : "/images/background_image2.png"
+    const downPage = (e) => {
+        if(windowWidth > 768){
+            window.scrollTo({top:windowHeight, left:windowWidth, behavior:'smooth'} );
+        }
+    }
     return (
         <div>
             <style jsx>{`
@@ -31,17 +35,17 @@ const MainTop = ({isBg1 = false, windowWidth, windowHeight}) => {
                         </div>
                         <div className="flex-row align-end grow1 align-self-flex-end">
                             <div className="flex-column justify-end grow1">
-                                <SmallBtn active/>
+                                <div className={`small-btn ${isBg1 && 'active'}`}></div>
                             </div>
                         </div>
                     </div>
                     <div className="grow1 flex-row">
                         <div className="grow1 align-self-flex-end">
-                            <SmallBtn/>
+                            <div className={`small-btn ${!isBg1 && 'active'}`}></div>
                         </div>
                         <div className="flex-row">
                             <div className="grow1 flex-column align-self-flex-end">
-                                <img src="/images/down-arrow.png" className="arrow"/>
+                                <img src="/images/down-arrow.png" className="arrow" onClick={downPage}/>
                             </div>    
                         </div>
                     </div>
@@ -51,4 +55,4 @@ const MainTop = ({isBg1 = false, windowWidth, windowHeight}) => {
     )
 }
 
-export default MainTop
+export default HeaderMain;
