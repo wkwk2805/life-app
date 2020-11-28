@@ -1,0 +1,6 @@
+.section1-container {height:60vw;display:flex;justify-content:center;align-items:center;}
+.section2-container {height:60vw;display:flex;justify-content:center;align-items:center;background:#f8f8f8}
+.section-header-text {font-size:4.5vw;font-family:SDNemony2dBasicBd;}
+.section-sub-text {font-size:2.5vw;margin-top:2vw}
+.section1-container .section-header-text {margin-left:10vw}
+.section2-container .section-header-text {margin-right:10vw}

@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import CustomNextArrow from '../components/header/CustomNextArrow';
 import HeaderMain from '../components/header/HeaderMain'
 
-const First = () => {
+const Header = () => {
     const [windowWidth, setWindowWidth] = useState(0);
     const [windowHeight, setWindowHeight] = useState(0);
     const setWindow = (innerWidth, innerHeight) => {
@@ -43,4 +43,4 @@ const First = () => {
     )
 }
 
-export default First
+export default Header

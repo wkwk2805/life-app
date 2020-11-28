@@ -1,3 +1,10 @@
+body{margin:0;padding:0;}
+div {font-family : AppleSDGothicNeoM;}
+.phone-mockup {width:40%;margin:auto;}
+.phone-mockup img {width:100%;margin:auto;}
+.green {color:#37ae40;}
+.bold {font-weight:bold;}
+
 @media screen and (min-width:768px) {
     .pd25 {padding:2.5vw}
     .flex-row {display:flex;flex-direction:row;}
