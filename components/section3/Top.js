@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Fiveth = () => {
+const Top = () => {
     return (
         <>
             <div>
-                <div className="section3-container">
+                <div className="section-container">
                     <div className="section-header-text ml10">
                         <div><span className="bold green">건강관리</span></div>
                         <div><span className="bold">잘하고</span>{' '}계시나요?</div>
@@ -24,4 +24,4 @@ const Fiveth = () => {
     )
 }
 
-export default Fiveth
+export default Top

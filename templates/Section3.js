@@ -1,12 +1,12 @@
 import React from 'react'
-import Fiveth from '../components/section3/Fiveth'
-import Sixth from '../components/section3/Sixth'
+import Top from '../components/section3/Top'
+import Security from '../components/section3/Security'
 
 const Section3 = () => {
     return (
         <>
-          <Fiveth/>
-          <Sixth/>  
+          <Top/>
+          <Security/>  
         </>
     )
 }

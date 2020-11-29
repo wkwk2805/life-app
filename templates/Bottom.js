@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Eighth = () => {
+const Bottom = () => {
     const instagram = 'https://instagram.com/lif2and?igshid=iwl4ws236u3u';
     const kakao = 'http://pf.kakao.com/_XxiSxfK';
     const facebook = 'https://www.facebook.com/lifenapp/';
@@ -9,15 +9,6 @@ const Eighth = () => {
     }
     return (
         <>
-            <style jsx>{`
-                .pl2 {padding-left:2vw;}
-                .pr2 {padding-right:2vw;}
-                .br {border-right:0.1vw solid grey}
-                .bl {border-left:0.1vw solid grey}
-                .m {margin:1.5vw}
-                .small-font {font-size:2vw;}
-                .m10 {margin:5vw 10vw;}
-            `}</style>
             <div className="container m10">
                 <div className="top m small-font">
                     <span className="pr2 br"><strong>이용약관</strong></span>
@@ -46,4 +37,4 @@ const Eighth = () => {
     )
 }
 
-export default Eighth
+export default Bottom

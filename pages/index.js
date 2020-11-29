@@ -2,8 +2,8 @@ import React, { useEffect } from 'react'
 import Header from '../templates/Header'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Seventh from '../templates/Seventh'
-import Eighth from '../templates/Eighth'
+import ReviewList from '../templates/ReviewList'
+import Bottom from '../templates/Bottom'
 import Section1 from '../templates/Section1'
 import Section2 from '../templates/Section2'
 import Section3 from '../templates/Section3';
@@ -51,8 +51,8 @@ const index = () => {
             <Section1 count={count.countUp} won={won.countUp} won2={won2.countUp} />
             <Section2/>
             <Section3/>
-            <Seventh/>
-            <Eighth/>
+            <ReviewList/>
+            <Bottom/>
         </div>
     )
 }

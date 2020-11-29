@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Third = () => {
+const Main = () => {
     return (
         <>
             <div>
-                <div className="section1-container">
+                <div className="section-container">
                     <div className="section-header-text ml10">
                         <div><span className="bold">받을 수</span>{' '}있는</div>
                         <div><span className="bold green">보험금</span>이{' '}<span className="bold">이렇게나</span></div>
@@ -24,4 +24,4 @@ const Third = () => {
     )
 }
 
-export default Third
+export default Main

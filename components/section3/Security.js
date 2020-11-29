@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Sixth = () => {
+const Security = () => {
     const bgImageUrl = '/images/rending_page_security2.png';
     return (
         <>
@@ -33,4 +33,4 @@ const Sixth = () => {
     )
 }
 
-export default Sixth
+export default Security

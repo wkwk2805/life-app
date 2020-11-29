@@ -4,7 +4,7 @@ const Section2 = () => {
     return (
         <>
             <div>
-                <div className="section2-container">
+                <div className="section-container section-bg-color">
                     <div className="phone-mockup">
                         <img src="/images/contents2-1.png"/>
                     </div>

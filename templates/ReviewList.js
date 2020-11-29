@@ -1,9 +1,9 @@
 import React from 'react'
 import Slider from 'react-slick';
 import CustomNextArrow from '../components/header/CustomNextArrow'
-import Review from '../components/seventh/Review'
+import Review from '../components/reviewList/Review'
 
-const Seventh = () => {
+const ReviewList = () => {
     const settings = {
         speed: 500,
         autoplaySpeed: 3000,
@@ -22,17 +22,11 @@ const Seventh = () => {
     꽁돈이 생긴 것 같아서 좋네요!`;
     return (
         <>
-            <style jsx>{`
-                .container {height:70vw;text-align:center;padding-top:10vw;background:#f8f8f8}
-                .text {font-size:3vw}
-                .text span {font-weight:bold}
-                .green {color:#37ae40;}
-            `}</style>
-            <div className="container">
-               <div className="text">
-                <span className="green">라이프앤</span>을{' '}<span>사용</span>한
+            <div className="review-container">
+               <div className="review-text">
+                <span className="bold green">라이프앤</span>을{' '}<span className="bold">사용</span>한
                 <br/>
-                <span>사용자들</span>의<span>{' '}리뷰</span>
+                <span className="bold">사용자들</span>의<span className="bold">{' '}리뷰</span>
                </div>
                <div>
                 <Slider {...settings}>
@@ -52,4 +46,4 @@ const Seventh = () => {
     )
 }
 
-export default Seventh
+export default ReviewList;
