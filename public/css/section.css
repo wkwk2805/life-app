@@ -1,7 +1,12 @@
 .section1-container {height:60vw;display:flex;justify-content:center;align-items:center;}
 .section2-container {height:60vw;display:flex;justify-content:center;align-items:center;background:#f8f8f8}
 .section3-container {height:60vw;display:flex;justify-content:center;align-items:center;}
-.section3-sub-text ol {padding-left:2.5vw !important;}
-.section-header-text {font-size:4.5vw;font-family:SDNemony2dBasicBd;}
+.section3-sub-text ol {padding-left:2.5vw !important; line-height: 2.5vw;}
+.section-header-text {font-size:4.5vw;font-family:"SDNemony2dBasicBd";}
 .section-sub-text {font-size:2.5vw;margin-top:2vw}
 .section3-sub-text {font-size:2vw;}
+.bottom-text {text-align:end;margin-right:15vw;}
+.bottom-text div {font-size:2vw;border:0.1vw solid grey;padding:0.1vw 1vw; border-radius:0.2vw;display:inline-block}
+.bgImage img{position:absolute;right:0;width:70vw;height:45vw;opacity:0.2;margin-top: -5vw;}
+.division {height:0.1vw;background:#c1c1c1;width:80%;margin:auto;}
+.section3-sub-container {height:40vw;width:80%;margin:auto;margin-top:5vw;}

@@ -6,6 +6,7 @@ div {font-family : AppleSDGothicNeoM;}
 .bold {font-weight:bold;}
 .ml10 {margin-left: 10vw;}
 .mr10 {margin-right: 10vw;}
+.pointer {cursor: pointer;}
 
 @media screen and (min-width:768px) {
     .pd25 {padding:2.5vw}

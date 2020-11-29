@@ -4,17 +4,9 @@ const Sixth = () => {
     const bgImageUrl = '/images/rending_page_security2.png';
     return (
         <>
-            <style jsx>{`
-                .division {height:0.1vw;background:#c1c1c1;width:80%;margin:auto;}
-                .container {height:40vw;width:80%;margin:auto;margin-top:5vw;}
-                .sub-text {font-size:2.4vw;}
-                .bottom-text {text-align:center;margin-left:20vw;margin-top:-1.5vw}
-                .bottom-text div {font-size:1vw;border:0.1vw solid grey;padding:0.1vw 1vw; border-radius:0.2vw;display:inline-block}
-                .bgImage img{position:absolute;right:0;width:70vw;height:45vw;opacity:0.2;margin-top: -5vw;}
-            `}</style>
             <div>
                 <div className="division"></div>
-                <div className="container">
+                <div className="section3-sub-container ">
                     <div className="bgImage">
                         <img src={bgImageUrl} />
                     </div>

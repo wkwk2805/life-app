@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import CustomNextArrow from '../components/header/CustomNextArrow';
 import HeaderMain from '../components/header/HeaderMain'
 
-const Header = () => {
+const Header = ({downPage}) => {
     const [windowWidth, setWindowWidth] = useState(0);
     const [windowHeight, setWindowHeight] = useState(0);
     const setWindow = (innerWidth, innerHeight) => {
@@ -19,25 +19,28 @@ const Header = () => {
     };
     useEffect(()=> {
         setWindow(innerWidth, innerHeight);
-        window.addEventListener('resize',setWindow);
+        if(innerWidth > 768){
+            window.addEventListener('resize',setWindow);
+        }
         return () => {
-            window.removeEventListener('resize',setWindow);
+            if(innerWidth > 768){
+                window.removeEventListener('resize',setWindow);
+            }
         }
     },[windowWidth,windowHeight])
     const settings = {
         speed: 500,
         fade: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         infinite:true,
         autoplay: true,
         nextArrow: <CustomNextArrow />,
-        className:'minus-mb'
     }
     return (
         <> 
         <Slider {...settings}>
-            <HeaderMain isBg1={true} windowHeight={windowHeight} windowWidth={windowWidth}/>
-            <HeaderMain isBg1={false} windowHeight={windowHeight} windowWidth={windowWidth}/>
+            <HeaderMain downPage={downPage} isBg1={true} windowHeight={windowHeight} windowWidth={windowWidth}/>
+            <HeaderMain downPage={downPage} isBg1={false} windowHeight={windowHeight} windowWidth={windowWidth}/>
         </Slider>
         </>
     )

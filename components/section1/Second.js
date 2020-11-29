@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Second = () => {
+const Second = ({count, won, won2}) => {
     return (
         <>
             <style jsx>{`
@@ -25,9 +25,12 @@ const Second = () => {
                         </div>
                         <div className="division"></div>
                         <div className="number">
-                            <div>123,403건</div>
+                            <div>{count}건</div>
+                            <div>{won}원</div>
+                            <div>{won2}원</div>
+                            {/* <div>123,403건</div>
                             <div>2,123,403원</div>
-                            <div>4,123,403원</div>
+                            <div>4,123,403원</div> */}
                         </div>
                     </div>
                 </div>

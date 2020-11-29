@@ -1,11 +1,13 @@
 import React from 'react'
 
-const HeaderMain = ({isBg1 = false, windowWidth, windowHeight}) => {
+const HeaderMain = ({isBg1 = false, windowWidth, windowHeight, downPage}) => {
     const bgUrl = isBg1 ? "/images/background_image1.png" : "/images/background_image2.png"
-    const downPage = (e) => {
-        if(windowWidth > 768){
-            window.scrollTo({top:windowHeight, left:windowWidth, behavior:'smooth'} );
-        }
+    const instagram = 'https://instagram.com/lif2and?igshid=iwl4ws236u3u';
+    const kakao = 'http://pf.kakao.com/_XxiSxfK';
+    const facebook = 'https://www.facebook.com/lifenapp/';
+    const googlePlay = 'https://play.google.com/store/apps/details?id=com.softsquared.android.greenribbon';
+    const moveToPage = (url) => {
+        location.href = url;
     }
     return (
         <div>
@@ -19,9 +21,9 @@ const HeaderMain = ({isBg1 = false, windowWidth, windowHeight}) => {
                         <img src="/images/life_and_logo.png"/>
                     </div>
                     <div className="icon flex-row">
-                        <img src="/images/instagram.png"/>
-                        <img src="/images/facebook.png"/>
-                        <img src="/images/kakao.png"/>
+                        <img className="pointer" src="/images/instagram.png" onClick={() => {moveToPage(instagram)}}/>
+                        <img className="pointer" src="/images/facebook.png" onClick={() => {moveToPage(facebook)}}/>
+                        <img className="pointer" src="/images/kakao.png" onClick={() => {moveToPage(kakao)}}/>
                     </div>
                 </div>
                 <div className="flex-row grow1">
@@ -30,7 +32,7 @@ const HeaderMain = ({isBg1 = false, windowWidth, windowHeight}) => {
                         <div className="header-font white">라이프앤</div>
                         <div className="sub-font white">보험부터 건강까지</div>
                         <div className="store-btns flex-row">
-                            <img src="/images/GooglePlay.png"/>
+                            <img className="pointer" src="/images/GooglePlay.png" onClick={()=>{moveToPage(googlePlay)}}/>
                             <img src="/images/Appstore_logo.png"/>
                         </div>
                         <div className="flex-row align-end grow1 align-self-flex-end">

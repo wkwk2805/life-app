@@ -1,5 +1,4 @@
 import React from 'react'
-import ChangeImage3 from '../fiveth/ChangeImage3'
 
 const Fiveth = () => {
     return (

@@ -1,6 +1,12 @@
 import React from 'react'
 
 const Eighth = () => {
+    const instagram = 'https://instagram.com/lif2and?igshid=iwl4ws236u3u';
+    const kakao = 'http://pf.kakao.com/_XxiSxfK';
+    const facebook = 'https://www.facebook.com/lifenapp/';
+    const moveToPage = (url) => {
+        location.href = url;
+    }
     return (
         <>
             <style jsx>{`
@@ -25,8 +31,15 @@ const Eighth = () => {
                     소비자의 권익을 보호하기 위해 서비스를 제공하고있습니다.<br/>
                     그린리본이 제공하는 보상서비스는 개별 보험약관 기준에 맞춰 놓친 보험금을 찾습니다.
                 </div>
-                <div className="bottom m small-font">
-                    Copyright ⓒ GreenRibbon. All rights reserved.
+                <div className="flex-row justify-between">
+                    <div className="bottom m small-font">
+                        Copyright ⓒ GreenRibbon. All rights reserved.
+                    </div>
+                    <div className="icon">
+                        <img className="pointer" src="/images/instagram.png" onClick={() => {moveToPage(instagram)}}/>
+                        <img className="pointer" src="/images/facebook.png" onClick={() => {moveToPage(facebook)}} />
+                        <img className="pointer" src="/images/kakao.png" onClick={() => {moveToPage(kakao)}} />
+                    </div>
                 </div>
             </div>
         </>
