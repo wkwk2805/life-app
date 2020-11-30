@@ -25,9 +25,10 @@ const ReviewList = () => {
         <>
             <div className="review-container">
                <div className="review-text">
-                <span className="bold green">라이프앤</span>을{' '}<span className="bold">사용</span>한
+                   <img src="/images/subtitle5.png" style={{width:'30vw', height:'10vw'}}/>
+                {/* <span className="bold green">라이프앤</span>을{' '}<span className="bold">사용</span>한
                 <br/>
-                <span className="bold">사용자들</span>의<span className="bold">{' '}리뷰</span>
+                <span className="bold">사용자들</span>의<span className="bold">{' '}리뷰</span> */}
                </div>
                <div>
                 <Slider {...settings}>

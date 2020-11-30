@@ -2,7 +2,8 @@
 .section-container {height:60vw;display:flex;justify-content:center;align-items:center;}
 .section-bg-color {background:#f8f8f8}
 .section-header-text {font-size:4.5vw;font-family:"SDNemony2dBasicBd";}
-.section-sub-text {font-size:2.5vw;margin-top:2vw}
+.section-sub-text {font-size:2.5vw;margin-top:2vw;}
+.align-right {text-align: right;}
 
 /**** section3 ****/
 .section3-sub-text {font-size:2vw;}

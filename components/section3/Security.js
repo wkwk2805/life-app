@@ -11,7 +11,7 @@ const Security = () => {
                         <img src={bgImageUrl} />
                     </div>
                     <div className="section-header-text">
-                        <span className="green bold">개인정보</span>가{' '}<span className="bold">유출 될까 걱정</span>이신가요?
+                        <img src="/images/subtitle4.png" style={{width:'100vw', height:'50vw', marginBottom:'-43vw'}}/>
                     </div>
                     <div className="section3-sub-text">
                         <ol>
