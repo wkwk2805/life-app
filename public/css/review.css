@@ -2,15 +2,16 @@
 .review-text {font-size:4vw}
 .rectangle {
     margin:5vw;
-    width:35vw;
-    height:30vw;
-    border-radius:5vw 5vw 2vw 2vw;
-    box-shadow: 2vw 2vw 4vw -0.2vw rgba(0, 0, 0, 0.5);
-    padding:2vw;
+    width:30vw;
+    height:25vw;
+    padding:3vw 3vw 5vw 3vw;
+    background: url('/images/review_box.png') no-repeat;
+    background-size: 100%;
+    background-position: right;
 }
 .avatar {
-    width:8vw;
-    height:8vw;
+    width:6vw;
+    height:6vw;
     border-radius: 50%;
     margin:auto;
     display:flex;
@@ -19,11 +20,11 @@
     background:#d8d8d8;
 }
 .avatar img{
-    width:5vw;
-    height:5vw;
+    width:4vw;
+    height:4vw;
     margin:auto;
 }
-.user {margin:1.5vw;font-size:2vw}
+.user {font-size:2vw;margin: 1vw 0;}
 .review-division {height:0.5vw;width:90%;background:#d8d8d8;margin:auto}
 .review-sub-text {font-size:2vw;width:85%;margin:auto;margin-top:2vw;height:13.5vw;}
 .multi-line-ellipsis {
@@ -33,4 +34,8 @@
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical; 
     word-wrap:break-word;
+}
+.rectangle-container {
+    margin-right: 2vw;
+    margin-bottom: 2vw;
 }

@@ -19,7 +19,8 @@ const ReviewList = () => {
     못하였는데 저렴한 수수료에
     서비스를 받을 수 있어서
     너무 편했습니다.
-    꽁돈이 생긴 것 같아서 좋네요!`;
+    꽁돈이 생긴 것 같아서 좋네요!
+    `;
     return (
         <>
             <div className="review-container">
