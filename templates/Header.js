@@ -34,6 +34,7 @@ const Header = ({downPage}) => {
         autoplaySpeed: 3000,
         infinite:true,
         autoplay: true,
+        pauseOnHover:false,
         nextArrow: <CustomNextArrow />,
     }
     return (

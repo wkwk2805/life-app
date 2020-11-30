@@ -7,9 +7,10 @@
 
 /**** section3 ****/
 .section3-sub-text {font-size:2vw;}
-.section3-sub-text ol {padding-left:2.5vw !important; line-height: 2.5vw;}
+.section3-sub-text ol {padding-left:2.5vw !important;}
+.section3-sub-text ol li {margin-top: 1vw;}
 .section3-sub-container {height:40vw;width:80%;margin:auto;margin-top:5vw;}
-.bottom-text {text-align:end;margin-right:15vw;}
+.bottom-text {text-align:end;margin-right:15vw;margin-top:-1vw}
 .bottom-text div {font-size:2vw;border:0.1vw solid grey;padding:0.1vw 1vw; border-radius:0.2vw;display:inline-block}
 .bgImage img{position:absolute;right:0;width:70vw;height:45vw;opacity:0.2;margin-top: -5vw;}
 .division {height:0.1vw;background:#c1c1c1;width:80%;margin:auto;}
@@ -24,3 +25,7 @@
 .number-money .division {height:0.3vw;background-color:white;width:90%;margin:auto}
 .number-money .number {display:flex;justify-content:space-around;font-size:3vw;}
 .number-money .number div {color:white;margin-top:1vw;}
+
+@media screen and (max-width:768px){
+    .bottom-text {text-align:end;margin-right:15vw;margin-top:-1.7vw}
+}

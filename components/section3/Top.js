@@ -1,6 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import Slider from 'react-slick';
+import CustomNextArrow from '../header/CustomNextArrow';
 
 const Top = () => {
+    const [width, setWidth] = useState(0);
+    useEffect(()=>{
+        setWidth(innerWidth);
+    },[])
+    const settings = {
+        speed: 500,
+        autoplaySpeed: 3000,
+        autoplay:true,
+        infinite: true,
+        pauseOnHover:false,
+        nextArrow: <CustomNextArrow />,
+        prevArrow: <CustomNextArrow />,
+    }
     return (
         <>
             <div>
@@ -17,8 +32,16 @@ const Top = () => {
                         </div>
                     </div>
                     <div className="phone-mockup">
+                    {width > 768 ? 
+                        <Slider {...settings}>
+                                <img src="/images/contents3-1.png"/>
+                                <img src="/images/contents3-2.png"/>
+                                <img src="/images/contents3-3.png"/>
+                        </Slider>:
                         <img src="/images/contents3-1.png"/>
+                    }
                     </div>
+
                 </div>
             </div>
         </>

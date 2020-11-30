@@ -27,6 +27,7 @@
 .user {font-size:2vw;margin: 1vw 0;}
 .review-division {height:0.5vw;width:90%;background:#d8d8d8;margin:auto}
 .review-sub-text {font-size:2vw;width:85%;margin:auto;margin-top:2vw;height:13.5vw;}
+
 .multi-line-ellipsis {
     overflow: hidden; 
     text-overflow: ellipsis; 
@@ -35,6 +36,18 @@
     -webkit-box-orient: vertical; 
     word-wrap:break-word;
 }
+
+@media screen and (max-width:768px){
+    .multi-line-ellipsis {
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical; 
+        word-wrap:break-word;
+    }
+}
+
 .rectangle-container {
     margin-right: 2vw;
     margin-bottom: 2vw;

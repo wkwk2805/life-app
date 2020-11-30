@@ -33,7 +33,7 @@ const HeaderMain = ({isBg1 = false, windowWidth, windowHeight, downPage}) => {
                         <div className="sub-font white">보험부터 건강까지</div>
                         <div className="store-btns flex-row">
                             <img className="pointer" src="/images/GooglePlay.png" onClick={()=>{moveToPage(googlePlay)}}/>
-                            <img src="/images/Appstore_logo.png"/>
+                            <img className="pointer" src="/images/Appstore_logo.png" onClick={()=>{alert("서비스 준비중 입니다\n조금만 기다려주세요")}}/>
                         </div>
                         <div className="flex-row align-end grow1 align-self-flex-end">
                             <div className="flex-column justify-end grow1">
