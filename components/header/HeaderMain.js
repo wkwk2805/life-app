@@ -6,9 +6,7 @@ const HeaderMain = ({isBg1 = false, windowWidth, windowHeight, downPage}) => {
     const kakao = 'http://pf.kakao.com/_XxiSxfK';
     const facebook = 'https://www.facebook.com/lifenapp/';
     const googlePlay = 'https://play.google.com/store/apps/details?id=com.softsquared.android.greenribbon';
-    const moveToPage = (url) => {
-        location.href = url;
-    }
+    const moveToPage = (url) => {location.href = url}
     return (
         <div>
             <style jsx>{`
