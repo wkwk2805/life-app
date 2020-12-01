@@ -8,7 +8,7 @@ const Header = ({downPage}) => {
     const [windowHeight, setWindowHeight] = useState(0);
 
     /* 웹사이트 width, height 기준으로 이미지를 컨트롤 함 */
-    const setWindow = (innerWidth, innerHeight) => {
+    const setWindowSize = (innerWidth, innerHeight) => {
         if(innerWidth > 768){
             setWindowWidth(innerWidth);
             setWindowHeight(innerHeight);
@@ -22,13 +22,13 @@ const Header = ({downPage}) => {
 
     /* 웹사이트 크기 변환시 헤더 이미지 및 내용도 변경 */ 
     useEffect(()=> {
-        setWindow(innerWidth, innerHeight);
+        setWindowSize(innerWidth, innerHeight);
         if(innerWidth > 768){
-            window.addEventListener('resize',setWindow);
+            window.addEventListener('resize',setWindowSize);
         }
         return () => {
             if(innerWidth > 768){
-                window.removeEventListener('resize',setWindow);
+                window.removeEventListener('resize',setWindowSize);
             }
         }
     },[windowWidth,windowHeight])
