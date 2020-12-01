@@ -27,15 +27,17 @@ const HeaderMain = ({isBg1 = false, windowWidth, windowHeight, downPage}) => {
                     </div>
                 </div>
                 <div className="flex-row grow1">
-                    <div className="title grow1 flex-column align-center align-between">
-                        <img src="/images/rest.png" />
-                        <div className="header-font white">라이프앤</div>
-                        <div className="sub-font white">보험부터 건강까지</div>
-                        <div className="store-btns flex-row">
+                    <div className="title grow1 flex-column align-center">
+                        <div className="flex-column grow1 align-center justify-center">
+                            <img src="/images/rest.png" />
+                            <div className="header-font white">라이프앤</div>
+                            <div className="sub-font white">보험부터 건강까지</div>
+                        </div>
+                        <div className="store-btns grow1 flex-row align-center">
                             <img className="pointer" src="/images/GooglePlay.png" onClick={()=>{moveToPage(googlePlay)}}/>
                             <img className="pointer" src="/images/Appstore_logo.png" onClick={()=>{alert("서비스 준비중 입니다\n조금만 기다려주세요")}}/>
                         </div>
-                        <div className="flex-row align-end grow1 align-self-flex-end">
+                        <div className="flex-row align-end align-self-flex-end">
                             <div className="flex-column justify-end grow1">
                                 <div className={`small-btn ${isBg1 && 'active'}`}></div>
                             </div>

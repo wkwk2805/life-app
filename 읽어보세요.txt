@@ -1,0 +1,16 @@
+사용한 라이브러리
+1. react-slick
+2. react-countup
+
+- 라이브러리 설치
+yarn add react-slick or npm i react-slick --save
+yarn add slick-carousel or npm i slick-carousel --save
+yarn add react-countup or npm i react-countup --save
+
+- _app.js에 css 호출된 내용이 들어가 있습니다.
+
+- public 디렉토리에 정적 파일들이 들어 있습니다. (적용시 경로 체크 한번 더 부탁드립니다.)
+
+- mobx를 사용하지 않고 부모 컨포넌트에서 자식컨포넌트로 
+  데이터 넘기는 형식으로 만들어서 처리한 부분이 존재합니다.
+  mobx로 적용 하실 땐 유의하셔서 적용하시기 바랍니다.

@@ -20,7 +20,6 @@
     .sub-font {font-size:2vw}
     .title img {width:1.8vw;height:3vw}
     .store-btns img {width:15vw;height:5vw;}
-    .store-btns {margin-top:10vw}
     .store-btns img:first-child {margin-right:2vw}
     .small-btns {justify-content: center;margin-top:6vw;}
     .arrow {width:8vw;height:14vw;margin-right:1vw;margin-bottom:2vw;}
@@ -33,9 +32,8 @@
     .icon img:last-child {margin-left:2.5vw;}
     .header-font {font-size:7vw;font-weight:bold;}
     .sub-font {font-size:2.5vw}
-    .title img {width:3vw;height:5vw}
+    .title img {width:2vw;height:3vw}
     .store-btns img {width:15vw;height:5vw;}
-    .store-btns {margin-top:5vw}
     .store-btns img:first-child {margin-right:2vw}
     .small-btns {justify-content: center;margin-top:9vw;}
     .arrow {width:8vw;height:14vw;margin-right:1vw;margin-bottom:2vw;}
