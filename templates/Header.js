@@ -6,6 +6,8 @@ import HeaderMain from '../components/header/HeaderMain'
 const Header = ({downPage}) => {
     const [windowWidth, setWindowWidth] = useState(0);
     const [windowHeight, setWindowHeight] = useState(0);
+
+    /* 웹사이트 width, height 기준으로 이미지를 컨트롤 함 */
     const setWindow = (innerWidth, innerHeight) => {
         if(innerWidth > 768){
             setWindowWidth(innerWidth);
@@ -17,6 +19,8 @@ const Header = ({downPage}) => {
             setWindowHeight(innerWidth * bgImageHeight / bgImageWidth);
         }
     };
+
+    /* 웹사이트 크기 변환시 헤더 이미지 및 내용도 변경 */ 
     useEffect(()=> {
         setWindow(innerWidth, innerHeight);
         if(innerWidth > 768){
@@ -28,6 +32,7 @@ const Header = ({downPage}) => {
             }
         }
     },[windowWidth,windowHeight])
+    
     const settings = {
         speed: 500,
         fade: true,
@@ -39,10 +44,10 @@ const Header = ({downPage}) => {
     }
     return (
         <> 
-        <Slider {...settings}>
-            <HeaderMain downPage={downPage} isBg1={true} windowHeight={windowHeight} windowWidth={windowWidth}/>
-            <HeaderMain downPage={downPage} isBg1={false} windowHeight={windowHeight} windowWidth={windowWidth}/>
-        </Slider>
+            <Slider {...settings}>
+                <HeaderMain downPage={downPage} isBg1={true} windowHeight={windowHeight} windowWidth={windowWidth}/>
+                <HeaderMain downPage={downPage} isBg1={false} windowHeight={windowHeight} windowWidth={windowWidth}/>
+            </Slider>
         </>
     )
 }
